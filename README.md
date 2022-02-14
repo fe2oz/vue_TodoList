@@ -55,5 +55,19 @@ this.$emit('removeTodo', todoItem, index)는 최상위 컴포넌트 App.vue로 �
 
 # App.vue
 
+<img width="595" alt="스크린샷 2022-02-14 오후 2 58 04" src="https://user-images.githubusercontent.com/93234748/153808293-a3d7ef38-88b4-4c12-83d2-b66ad30cae98.png">
 
+1. TodoHeader는 특별한 건 없음.
 
+2. TodoInput
+새로고침 없이 바로 입력되기 위해 @addTodo="addTodo"를 적어줌. TodoInput의 < this.$emit('addTodo',value)로 App.vue의 addTodo(todoItem)로 연결? (맞는지 모르겠다;)
+input에 텍스트 입력하면 localStorage.setItem(키, 값)으로 저장되고, todoItems: [] 배열?에 저장돼서 화면에 보여진다
+
+3. TodoList
+v-bind:propsdata="todoItems"로 기존의 v-for="(todoItem, index) in todoItems"를 v-for="todoItem, index) in propsdata"로 바꿈
+TodoList에는 props : ['propsdata'] 작성 // 데이터 전달을 위해 props을 작성한 것 같다
+여기도 새로고침 없이 바로 삭제되기 위해 @removeTodo = "removeTodo"를 작성했다. TodoList에는 역시 this.$emit('removeTodo', todoItem, index)를 적어준다
+
+4. TodoFooter
+v-on:removeAll="clearTodo"를 작성했으니 TodoFooter에 this.$emit('removeAll')을 작성
+원래 removeTodo(){...} 이게 TodoFooter에 있었는데 연결해줌으로써 App.vue에다가 옮긴 것 같다?
