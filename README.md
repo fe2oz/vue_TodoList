@@ -38,7 +38,8 @@ clearInput() 함수는 텍스트를 입력하고 공란으로 만들어주기 �
 <img width="494" alt="스크린샷 2022-02-14 오후 2 48 58" src="https://user-images.githubusercontent.com/93234748/153807273-8d6f2877-4686-481c-a7cf-15c3dc77d18b.png">
 
 ul > li 하나를 만들어주고, 로컬스토리지에 저장되는 input의 값을 for 문으로 받아주기 위해 v-for="(todoItem, index) in propsdata"를 적어준다. v-for만 적으면 에러가 나길래 구글링 해보니 key 값도 적어줘야 된다길래 :key="todoItem"을 적어줬다.
-리스트를 삭제하는 버튼도 만들려고 우측에 x 표시의 폰트어썸 아이콘을 넣어줬다
+리스트를 삭제하는 버튼도 만들려고 우측에 x 표시의 폰트어썸 아이콘을 넣어줬다.
+
 propsdata 는 최상위 컴포넌트 App.vue로 연결된다
 
 <img width="348" alt="스크린샷 2022-02-14 오후 2 53 16" src="https://user-images.githubusercontent.com/93234748/153807749-8c846172-a30d-4fca-be2c-3a13ab6fdbe2.png">
