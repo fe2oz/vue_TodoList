@@ -29,8 +29,8 @@ input 에는 엔터로 입력될 수 있게 v-on:keyup.enter = "addTodo"를, '+'
 <img width="490" alt="스크린샷 2022-02-14 오후 2 45 25" src="https://user-images.githubusercontent.com/93234748/153806940-22fc25d3-0fbc-4709-a69f-d7cdbae1aee9.png">
 
 빈 값을 받지 않기 위해 예외 처리를 해준다. this.$emit('addTodo', value) 는 최상위 컴포넌트인 App.vue로 연결된다.
-clearInput() 함수는 텍스트를 입력하고 공란으로 만들어주기 위함이다
-적은 할 일의 텍스트 값들은 로컬스토리지에 저장된다.
+clearInput() 함수는 텍스트를 입력하고 공란으로 만들어주기 위함이다.
+할 일의 텍스트 값들은 로컬스토리지에 저장된다.
 
 # TodoList.vue
 할 일의 리스트로 나올 부분. 
