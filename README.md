@@ -65,7 +65,7 @@ this.$emit('removeTodo', todoItem, index)는 최상위 컴포넌트 App.vue로 �
 input에 텍스트 입력하면 localStorage.setItem(키, 값)으로 저장되고, todoItems: [] 배열?에 저장돼서 화면에 보여진다
 
 3. TodoList
-v-bind:propsdata="todoItems"로 기존의 v-for="(todoItem, index) in todoItems"를 v-for="todoItem, index) in propsdata"로 바꿈
+v-bind:propsdata="todoItems"로 기존의 v-for="(todoItem, index) in todoItems"를 v-for="(todoItem, index) in propsdata"로 바꿈
 TodoList에는 props : ['propsdata'] 작성 // 데이터 전달을 위해 props을 작성한 것 같다
 여기도 새로고침 없이 바로 삭제되기 위해 @removeTodo = "removeTodo"를 작성했다. TodoList에는 역시 this.$emit('removeTodo', todoItem, index)를 적어준다
 
