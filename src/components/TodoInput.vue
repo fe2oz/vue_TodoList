@@ -2,7 +2,7 @@
   <div class="input">
     <input type="text" v-model="newTodoItem"
     placeholder="할 일을 입력해 보세요!" v-on:keyup.enter="addTodo">
-    <span type="button" class="addBtn">
+    <span type="button" class="addBtn" @click="addTodo">
       <i class="fa-solid fa-plus plus addBtn"></i>
     </span>
   </div>
