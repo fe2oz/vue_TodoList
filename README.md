@@ -17,7 +17,8 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# 02.14 혼자 해석해가면서 책 보고 작성했는데 맞는지 모르겠다;
+# 02.14 
+혼자 해석해가면서 책 보고 작성했는데 맞는지 모르겠다;
 
 # TodoHeader.vue
 제목이 될 부분. 대충 'Todo List!'로 타이틀을 세워놨다.
