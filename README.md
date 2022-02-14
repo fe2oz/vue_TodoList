@@ -16,3 +16,6 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# 02.14 
+최상위 컴포넌트인 App.vue에 컴포넌트를 연결했음.
