@@ -17,7 +17,7 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# 02.14 
+# 02.14 혼자 해석해가면서 책 보고 작성했는데 맞는지 모르겠다;
 
 # TodoHeader.vue
 제목이 될 부분. 대충 'Todo List!'로 타이틀을 세워놨다.
@@ -61,7 +61,7 @@ this.$emit('removeTodo', todoItem, index)는 최상위 컴포넌트 App.vue로 �
 1. TodoHeader는 특별한 건 없음.
 
 2. TodoInput
-새로고침 없이 바로 입력되기 위해 @addTodo="addTodo"를 적어줌. TodoInput의 < this.$emit('addTodo',value)로 App.vue의 addTodo(todoItem)로 연결? (맞는지 모르겠다;)
+새로고침 없이 바로 입력되기 위해 @addTodo="addTodo"를 적어줌. TodoInput의 < this.$emit('addTodo',value)로 App.vue의 addTodo(todoItem)로 연결?
 input에 텍스트 입력하면 localStorage.setItem(키, 값)으로 저장되고, todoItems: [] 배열?에 저장돼서 화면에 보여진다
 
 3. TodoList
