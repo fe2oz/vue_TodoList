@@ -17,6 +17,8 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+<img width="597" alt="스크린샷 2022-02-15 오후 12 42 54" src="https://user-images.githubusercontent.com/93234748/153988593-46ba716f-b292-4db1-8cd6-3d87669a0e01.png">
+
 # 02.14 
 혼자 해석해가면서 책 보고 작성했는데 맞는지 모르겠다;
 
@@ -72,4 +74,8 @@ TodoList에는 props : ['propsdata'] 작성 // 데이터 전달을 위해 props�
 
 4. TodoFooter
 v-on:removeAll="clearTodo"를 작성했으니 TodoFooter에 this.$emit('removeAll')을 작성
-원래 removeTodo(){...} 이게 TodoFooter에 있었는데 연결해줌으로써 App.vue에다가 옮긴 것 같다?
+원래 removeTodo(){...} 이게 TodoFooter에 있었는데 연결해줌으로써 App.vue에다가 옮긴 것 같다? 
+
+# 02.15 
+만든 거 깃헙 페이지에 반영하는 방법을 모색해보자...
+
